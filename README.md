@@ -1,3 +1,3 @@
 # Notepad
 
-Creating an Notepad 😎
+Notepad Project
