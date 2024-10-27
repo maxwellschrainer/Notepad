@@ -108,8 +108,8 @@
             this.mnsSaveAs,
             this.mnsQuit});
             this.mnsFile.Name = "mnsFile";
-            this.mnsFile.Size = new System.Drawing.Size(78, 24);
-            this.mnsFile.Text = "Arquivo";
+            this.mnsFile.Size = new System.Drawing.Size(94, 26);
+            this.mnsFile.Text = "&Arquivo";
             // 
             // mnsNew
             // 
@@ -123,6 +123,7 @@
             this.mnsOpen.Name = "mnsOpen";
             this.mnsOpen.Size = new System.Drawing.Size(224, 26);
             this.mnsOpen.Text = "Abrir";
+            this.mnsOpen.Click += new System.EventHandler(this.mnsOpen_Click);
             // 
             // mnsSave
             // 
@@ -151,8 +152,8 @@
             this.mnsPaste,
             this.mnsSelectAll});
             this.mnsEdit.Name = "mnsEdit";
-            this.mnsEdit.Size = new System.Drawing.Size(62, 24);
-            this.mnsEdit.Text = "Editar";
+            this.mnsEdit.Size = new System.Drawing.Size(84, 26);
+            this.mnsEdit.Text = "&Editar";
             // 
             // mnsUndo
             // 
@@ -190,8 +191,8 @@
             this.mnsLineBreak,
             this.mnsFont});
             this.mnsFormat.Name = "mnsFormat";
-            this.mnsFormat.Size = new System.Drawing.Size(83, 24);
-            this.mnsFormat.Text = "Formatar";
+            this.mnsFormat.Size = new System.Drawing.Size(104, 26);
+            this.mnsFormat.Text = "&Formatar";
             // 
             // mnsLineBreak
             // 
@@ -212,7 +213,7 @@
             this.mnsHelp.Font = new System.Drawing.Font("Consolas", 11F);
             this.mnsHelp.Name = "mnsHelp";
             this.mnsHelp.Size = new System.Drawing.Size(74, 26);
-            this.mnsHelp.Text = "Ajuda";
+            this.mnsHelp.Text = "Aj&uda";
             // 
             // mnsAbout
             // 
