@@ -130,6 +130,7 @@
             this.mnsSave.Name = "mnsSave";
             this.mnsSave.Size = new System.Drawing.Size(224, 26);
             this.mnsSave.Text = "Salvar";
+            this.mnsSave.Click += new System.EventHandler(this.mnsSave_Click);
             // 
             // mnsSaveAs
             // 
@@ -158,31 +159,31 @@
             // mnsUndo
             // 
             this.mnsUndo.Name = "mnsUndo";
-            this.mnsUndo.Size = new System.Drawing.Size(224, 26);
+            this.mnsUndo.Size = new System.Drawing.Size(244, 26);
             this.mnsUndo.Text = "Desfazer";
             // 
             // mnsCut
             // 
             this.mnsCut.Name = "mnsCut";
-            this.mnsCut.Size = new System.Drawing.Size(224, 26);
+            this.mnsCut.Size = new System.Drawing.Size(244, 26);
             this.mnsCut.Text = "Recortar";
             // 
             // mnsCopy
             // 
             this.mnsCopy.Name = "mnsCopy";
-            this.mnsCopy.Size = new System.Drawing.Size(224, 26);
+            this.mnsCopy.Size = new System.Drawing.Size(244, 26);
             this.mnsCopy.Text = "Copiar";
             // 
             // mnsPaste
             // 
             this.mnsPaste.Name = "mnsPaste";
-            this.mnsPaste.Size = new System.Drawing.Size(224, 26);
+            this.mnsPaste.Size = new System.Drawing.Size(244, 26);
             this.mnsPaste.Text = "Colar";
             // 
             // mnsSelectAll
             // 
             this.mnsSelectAll.Name = "mnsSelectAll";
-            this.mnsSelectAll.Size = new System.Drawing.Size(224, 26);
+            this.mnsSelectAll.Size = new System.Drawing.Size(244, 26);
             this.mnsSelectAll.Text = "Selecionar Tudo";
             // 
             // mnsFormat
@@ -197,13 +198,13 @@
             // mnsLineBreak
             // 
             this.mnsLineBreak.Name = "mnsLineBreak";
-            this.mnsLineBreak.Size = new System.Drawing.Size(224, 26);
+            this.mnsLineBreak.Size = new System.Drawing.Size(244, 26);
             this.mnsLineBreak.Text = "Quebra de Linha";
             // 
             // mnsFont
             // 
             this.mnsFont.Name = "mnsFont";
-            this.mnsFont.Size = new System.Drawing.Size(224, 26);
+            this.mnsFont.Size = new System.Drawing.Size(244, 26);
             this.mnsFont.Text = "Fonte";
             // 
             // mnsHelp
@@ -218,7 +219,7 @@
             // mnsAbout
             // 
             this.mnsAbout.Name = "mnsAbout";
-            this.mnsAbout.Size = new System.Drawing.Size(224, 26);
+            this.mnsAbout.Size = new System.Drawing.Size(144, 26);
             this.mnsAbout.Text = "Sobre";
             // 
             // Main

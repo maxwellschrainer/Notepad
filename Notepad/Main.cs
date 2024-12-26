@@ -12,6 +12,8 @@ namespace Notepad
 {
     public partial class Main : Form
     {
+        public TextBox campoTexto;
+
         public Main()
         {
             InitializeComponent();
@@ -37,6 +39,35 @@ namespace Notepad
                 using (System.IO.StreamReader sr = new System.IO.StreamReader(openNewFile.FileName))
                 {
                     txtMain.Text = sr.ReadToEnd();
+                }
+            }
+        }
+        #endregion
+
+        #region Salvar Arquivos
+        private void mnsSave_Click(object sender, EventArgs e)
+        {
+            // Configurações básicas
+            SaveFileDialog saveFile = new SaveFileDialog()
+            {
+                Filter = "Arquivos de Texto (*.txt)|*.txt",
+                Title = "Salvar Arquivo",
+                DefaultExt = "txt"
+            };
+
+            // Abrir o saveFile
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Salvar o arquivo do TextBox
+                    System.IO.File.WriteAllText(
+                        saveFile.FileName, campoTexto.Text);
+                    MessageBox.Show("Arquivo salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao salvar o arqvuio: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
